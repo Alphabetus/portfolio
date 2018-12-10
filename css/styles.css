@@ -19,7 +19,7 @@ body{
 #contact .btn{
   width: 50%;
 }
-.jumbtron{
+.jumbotron{
   background-image: url("../img/background_01.jpg");
   background-size: cover;
   background-color: var(--background-color);
