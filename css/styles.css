@@ -20,6 +20,14 @@ body{
 #contact .btn{
   width: 50%;
 }
+.readMore{
+  position: absolute;
+  max-width: 50%;
+  margin: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 .jumbotron{
   background-image: url("../img/background_01.jpg");
   background-size: cover;
