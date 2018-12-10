@@ -1,11 +1,28 @@
 /* about css */
+:root {
+  --background-color: #CDDDDC;
+  --text-header: #003049;
+  --text-header-2: #025884;
+  --footer-color: #D3F4FB;
+  --text-simple: #8C9A9E;
+  --color-blue-1: #54b4c4;
+  --color-blue-2: #72E3F5;
+  --shadow-color-1: rgba(0, 0, 0, 0.05);
+}
 * { box-sizing: border-box;}
 .container{
   margin: 0 auto;
   width: 80%;
 }
+body{
+  background-color: #fff;
+  color: #34495e;
+}
 p{
   text-align: justify;
+}
+#main{
+  margin-top: 10vh;
 }
 .header h1{
   text-align: center;
@@ -14,33 +31,47 @@ p{
  display: inline-block;
  float: left;
  width: 33%;
- height: 50vh;
  padding: 0 20px;
  border-style: solid;
  border-width: 0.5px;
  border-color: lightblue;
- border-radius: 5px;
+ border-radius: 2px;
+ height: 300px;
 }
 .main-text{
   padding: 60px 40px 60px 40px;
   clear: both;
 }
-.helper {
-  display: inline-block;
-  height: 28%;
+.image{
+
 }
 .image img{
+  position: relative;
+  top: 30%;
+  bottom: 0;
   width: 100%;
 }
-footer{
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-image: url("../img/background_01.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  color: var(--text-header);
-  text-align: right;
-  padding: 0px 25px 0px 25px;
+#skill-list{
+  margin-left: 2%;
+}
+.skill, .intro, .image{
+  background-color: var(--color-blue-1);
+  color: #fff;
+}
+/* typography */
+h1,h2,h3{
+  font-family: Futura, Helvetica, Arial, sans-serif;
+}
+p,li{
+  font-family: 'Montserrat', sans-serif;
+}
+.intro p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  font-weight: 100;
+  -webkit-margin-before: 0;
+}
+.skills h3{
+  text-align: center;
+  text-transform: uppercase;
 }
