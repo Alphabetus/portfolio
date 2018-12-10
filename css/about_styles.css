@@ -1,0 +1,50 @@
+/* about css */
+* { box-sizing: border-box;}
+.container{
+  margin: 0 auto;
+  width: 80%;
+}
+p{
+  text-align: justify;
+}
+.header h1{
+  text-align: center;
+}
+.column{
+ display: inline-block;
+ float: left;
+ width: 33%;
+ height: 50vh;
+ padding: 0 20px;
+ border-style: solid;
+ border-width: 0.5px;
+ border-color: lightblue;
+ border-radius: 5px;
+}
+.main-text{
+  padding: 60px 40px 60px 40px;
+  clear: both;
+}
+.helper {
+  display: inline-block;
+  height: 25%;
+  vertical-align: middle;
+}
+.image{
+  vertical-align: middle;
+}
+.image img{
+  width: 100%;
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-image: url("../img/background_01.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: var(--text-header);
+  text-align: right;
+  padding: 0px 25px 0px 25px;
+}
