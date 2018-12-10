@@ -1,0 +1,59 @@
+:root {
+  --background-color: #CDDDDC;
+  --text-header: #003049;
+  --footer-color: #D3F4FB;
+  --text-simple: #8C9A9E;
+  --color-blue-1: #54b4c4;
+  --color-blue-2: #72E3F5;
+  --shadow-color-1: rgba(0, 0, 0, 0.05);
+}
+body{
+  padding-bottom: 50px;
+}
+#header{
+  box-shadow: 0px 5px var(--shadow-color-1);
+}
+#contact{
+  text-align: center;
+}
+#contact .btn{
+  width: 50%;
+}
+.btn{
+  background-color: var(--color-blue-2);
+  border-style: none;
+}
+.btn:hover{
+  background-color: var(--color-blue-1);
+}
+.backgroundCover{
+  background-image: url("../img/background_01.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.backgroundFill{
+  background-color: var(--background-color);
+}
+.textHeader-color{
+  color: var(--text-header);
+}
+.anchorBottom{
+  vertical-align: bottom;
+  bottom: 0;
+}
+.centered{
+  text-align: center;
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-image: url("../img/background_01.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: var(--text-header);
+  font-size: 12px;
+  text-align: right;
+  padding: 0px 25px 0px 25px;
+}
