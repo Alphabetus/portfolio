@@ -19,20 +19,17 @@ body{
 #contact .btn{
   width: 50%;
 }
+.jumbtron{
+  background-image: url("../img/background_01.jpg");
+  background-size: cover;
+  background-color: var(--background-color);
+}
 .btn{
   background-color: var(--color-blue-2);
   border-style: none;
 }
 .btn:hover{
   background-color: var(--color-blue-1);
-}
-.backgroundCover{
-  background-image: url("../img/background_01.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.backgroundFill{
-  background-color: var(--background-color);
 }
 .textHeader-color{
   color: var(--text-header);
