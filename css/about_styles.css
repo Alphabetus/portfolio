@@ -8,15 +8,20 @@
   --color-blue-1: #54b4c4;
   --color-blue-2: #72E3F5;
   --shadow-color-1: rgba(0, 0, 0, 0.05);
+  --non-opaque-blue-2: rgba(84, 180, 196, 0.2);
 }
 * { box-sizing: border-box;}
 .container{
   margin: 0 auto;
   width: 80%;
+  height: 100%;
 }
 body{
   background-color: #fff;
   color: #34495e;
+}
+#bodyContact{
+  background-color: var(--non-opaque-blue-2);
 }
 p{
   text-align: justify;
@@ -38,12 +43,32 @@ p{
  border-radius: 2px;
  height: 300px;
 }
+.contactCol{
+  display: inline-block;
+  float: left;
+  width: 50%;
+}
+#formArea{
+  text-align: justify;
+  padding: 2vh 2vw 2vh 2vw;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--color-blue-1);
+  height: 100%;
+}
+#formArea p{
+  margin-top: 25px;
+}
+#formArea ul{
+  list-style-type: none;
+}
+.contactImg{
+  position: relative;
+  width: 50%;
+}
 .main-text{
   padding: 60px 40px 60px 40px;
   clear: both;
-}
-.image{
-
 }
 .image img{
   position: relative;
@@ -74,4 +99,13 @@ p,li{
 .skills h3{
   text-align: center;
   text-transform: uppercase;
+}
+.contactCol h1{
+  text-align: center;
+  font-weight: 100;
+  font-family: Papyrus,fantasy;
+}
+.contactCol ul{
+  font-weight: 900;
+  font-style: italic;
 }
