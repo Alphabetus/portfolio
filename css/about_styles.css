@@ -27,11 +27,7 @@ p{
 }
 .helper {
   display: inline-block;
-  height: 25%;
-  vertical-align: middle;
-}
-.image{
-  vertical-align: middle;
+  height: 28%;
 }
 .image img{
   width: 100%;
