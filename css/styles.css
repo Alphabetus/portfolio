@@ -1,6 +1,7 @@
 :root {
   --background-color: #CDDDDC;
   --text-header: #003049;
+  --text-header-2: #025884;
   --footer-color: #D3F4FB;
   --text-simple: #8C9A9E;
   --color-blue-1: #54b4c4;
@@ -23,6 +24,9 @@ body{
   background-image: url("../img/background_01.jpg");
   background-size: cover;
   background-color: var(--background-color);
+}
+.jumbotron p{
+  color: white;
 }
 .btn{
   background-color: var(--color-blue-2);
