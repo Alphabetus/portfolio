@@ -9,9 +9,28 @@
   --shadow-color-1: rgba(0, 0, 0, 0.05);
   --nav-color-1: #385F71;
   --nav-color-2: #2AF9A3;
+  --color-grey-01: #EFEFEF;
+  /* image vars  */
+  --img-pattern-01: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAJklEQVQYV2PsfvyxoVSWv4EBCTCC2OgSYEFkCZACuCCyBIZKkCQApRkW5X2k5dcAAAAASUVORK5CYII=");
+  --img-background-01: url("../img/background_01.jpg");
 }
+* { box-sizing: border-box;}
 body{
+  background-color: #fff;
+  color: #34495e;
   padding-bottom: 50px;
+}
+#bodyContact{
+  background-color: var(--non-opaque-blue-2);
+}
+/* CONTAINER ADJUSTS  */
+.container{
+  margin: 0 auto;
+  width: 80%;
+}
+/* CONTENT ADJUSTS */
+.content{
+  margin-top: 15vh;
 }
 #header{
   box-shadow: 0px 5px var(--shadow-color-1);
@@ -52,6 +71,115 @@ body{
 .centered{
   text-align: center;
 }
+.max{
+  height: 100%;
+  border-style: solid;
+  border-color: red;
+}
+.column{
+ display: inline-block;
+ width: 100%;
+ padding: 10% 8%;
+ border-style: solid;
+ border-width: 0.5px;
+ border-color: lightblue;
+ border-radius: 2px;
+ height: 100%;
+}
+.contactCol{
+  display: inline-block;
+  float: left;
+  width: 50%;
+}
+/* ABOUT PAGE  */
+.skill, .intro, .image{
+  background-color: var(--color-blue-1);
+  color: var(--text-header);
+  background-image: var(--img-background-01);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#skill-list{
+  font-size: 1.05em;
+  list-style-type: none;
+  font-weight: bold;
+}
+#skill-list li{
+  margin: 8vh 0;
+}
+#formArea{
+  text-align: justify;
+  padding: 2vh 2vw 2vh 2vw;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--color-blue-1);
+  height: 100%;
+}
+#formArea p{
+  margin-top: 25px;
+}
+#formArea ul{
+  list-style-type: none;
+}
+/* CONTACT PAGE  */
+.contactImg{
+  position: relative;
+  width: 50%;
+}
+.main-text{
+  margin: 5vh auto auto auto;
+  background-image: var(--img-background-01);
+  padding: 60px 40px 60px 40px;
+  clear: both;
+}
+.image img{
+  position: relative;
+  top: 30%;
+  bottom: 0;
+  width: 100%;
+}
+/* NAVIGATION STYLING  */
+nav {
+  position: fixed;
+  width: 100% !important;
+  height: 7vh;
+  top: 0;
+  left: 0;
+  background-color: var(--color-blue-1);
+  z-index: 100;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 2vh 3vw 1vh 3vw;
+  clear: both;
+  background-image: var(--img-background-01);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+nav .spaced{
+  word-spacing: 2vw;
+}
+nav a {
+  font-weight: 900;
+  text-decoration: none;
+  color: var(--nav-color-1);
+}
+nav a:hover{
+  font-size: 1.06em;
+  color: var(--nav-color-2);
+  text-decoration: none;
+  /* safari */
+  -webkit-transition: font-size 1200ms, color 300ms;
+  /* regular */
+  transition: font-size 1200ms, color 300ms;
+}
+/* FLOAT HANDLERS  */
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+/* FOOTER  */
 footer{
   position: fixed;
   bottom: 0;
@@ -64,4 +192,67 @@ footer{
   font-size: 12px;
   text-align: right;
   padding: 0px 25px 0px 25px;
+}
+footer a{
+  font-weight: 900;
+  text-decoration: none;
+  color: var(--nav-color-1);
+}
+footer a:hover{
+  text-decoration: none;
+  font-weight: 900;
+}
+/* accordion styling  */
+.card-header{
+  background-image: var(--img-background-01);
+  background-size: cover;
+  font-size: 22px;
+}
+.card-body{
+  background-color: var(--color-grey-01);
+  background-image: var(--img-pattern-01);
+  background-repeat: repeat;
+  font-size: 16px;
+}
+.card-header .collapsed{
+  color: var(--text-header);
+  cursor: pointer;
+}
+.card-header .collapsed:hover{
+  color: var(--color-blue-1)!important;
+  font-size: 1.05em;
+  /* effects */
+  transition: color 800ms, font-size 1200ms;
+  /* safari */
+  -webkit-transition: color 800ms, font-size 1200ms;
+}
+/* buttons styling  */
+.btn{
+  color: var(--text-header-1);
+}
+/* TYPOGRAPHY STYLING  */
+p{
+  text-align: justify;
+}
+h1,h2,h3{
+  font-family: Futura, Helvetica, Arial, sans-serif;
+}
+p,li{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.intro p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  font-weight: 100;
+  -webkit-margin-before: 0;
+}
+.contactCol h1{
+  text-align: center;
+  font-weight: 100;
+  font-family: Papyrus,fantasy;
+}
+.contactCol ul{
+  font-weight: 900;
+  font-style: italic;
 }

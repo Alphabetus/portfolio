@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <!-- header -->
+  <head>
+    <!--meta-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  </head>
+  <!-- body -->
+  <body>
+    <nav class="container-fluid">
+      <section class="left">
+        <a href="/">Diogo's Web</a>
+      </section>
+      <section class="right spaced">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+      </section>
+    </nav>
+    <!-- /navigation -->
+    <section class="container-fluid content">
+      <section class="header">
+        <h1>Frequently Asked Questions</h1>
+      </section><!-- end of header -->
+      <section class="container content"> <!-- start of accordion container -->
+        <div id="accordion"><!-- start of accordion -->
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <a class="collapsed click" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <i class="fas fa-question-circle"></i> Question #1 &raquo;
+                </a>
+              </h5>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                Answer #1
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <a class="collapsed click" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <i class="fas fa-question-circle"></i> Question #2 &raquo;
+                </a>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                Answer #2
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <a class="collapsed click" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <i class="fas fa-question-circle"></i> Question #3 &raquo;
+                </a>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                Answer #3
+              </div>
+            </div>
+          </div>
+        </div><!-- end of accordion -->
+      </section><!-- end of accordion container -->
+    </section><!--end of main container-->
+    <!-- jquery call -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- end of jquery call -->
+    <!-- boostrap call -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- end of bootsrap call -->
+  </body>
+  <!-- footer -->
+  <footer>
+    <a href="https://github.com/Alphabetus" target="_blank">GitHub</a> | <a href="mailto:dlgreis88@gmail.com">Diogo Gomes</a> <b>&copy;</b>2018
+  </footer>
+</html>

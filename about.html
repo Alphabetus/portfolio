@@ -6,9 +6,11 @@
     <!-- make responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- link css -->
-    <link rel="stylesheet" href="css/about_styles.css">
-    <!-- normalise css -->
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font awesome source > below bootsrap -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <!-- title  -->
@@ -16,7 +18,7 @@
   </head>
   <body>
     <!-- navigation -->
-    <nav class="container">
+    <nav class="container-fluid">
       <section class="left">
         <a href="/">Diogo's Web</a>
       </section>
@@ -24,48 +26,67 @@
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
-        <a href="#">FAQ</a>
+        <a href="faq.html">FAQ</a>
       </section>
     </nav>
     <!-- /navigation -->
     <section class="container content">
-      <section class="header">
-        <h1>About me</h1>
-      </section><!-- end of header -->
-      <section class="image column">
-        <img src="img/webdev_01.png" alt="Web dev banner"/>
-      </section><!-- end of image -->
-      <section class="intro column">
-        <h2>About me</h2>
-        <p>
-          A passionated developer, my dedication and experience will help your team to achieve exactly what you are looking for. Among my wide offer, you will be able to find the perfect solution for your particular case, always with personalised treatment, active customer support and affordable fees.<br>
-          Scroll down to get to know me better and find my working history and associated customers.
-        </p>
-      </section><!-- end of intro -->
-      <section class="skill column">
-        <h2>My skills</h2>
-        <ul id="skill-list">
-          <li>
-            Full stack Wev development;
-          </li>
-          <li>
-            Web & Graphic design;
-          </li>
-          <li>
-            Android solutions;
-          </li>
-        </ul>
-      </section><!-- end of skill -->
-      <section class="main-text">
-        <h3>Get to know me better</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lobortis enim neque. Proin venenatis porttitor purus, non volutpat quam aliquet quis. In varius purus ut nisl hendrerit feugiat. Donec mattis nibh accumsan magna ultrices vestibulum. Etiam at massa velit. Praesent at ultricies enim, eget congue ex. Praesent vitae erat non ligula rhoncus iaculis. Mauris quis quam nec tortor hendrerit viverra vel eu eros. Duis ullamcorper dui eu sem aliquet interdum. Aliquam venenatis, sapien at euismod tincidunt, nunc augue imperdiet libero, at tempus libero velit id ipsum. Nunc vitae nisi quis tortor vestibulum vulputate cursus et tortor. Cras in odio quis est ornare vulputate. Nulla a rhoncus sem, eget aliquam libero. Fusce et arcu sem. Cras vestibulum dapibus risus, ut rutrum arcu tempor sit amet.
-        </p>
-      </section><!-- end of main text -->
-    </section><!-- end of container -->
-    <section class="example">
-
-    </section><!-- end of example -->
+      <section class="container"><!-- header container -->
+        <section class="header">
+          <h1>Resumee</h1>
+        </section><!-- end of header -->
+      </section><!-- end of header container -->
+      <section class="container-fluid"><!-- container for columns -->
+        <section class="row">
+          <section class="col-sm">
+            <section class="image column">
+              <img src="img/webdev_01.png" alt="Web dev banner"/>
+            </section>
+          </section><!-- end of col 1-->
+          <section class="col-sm">
+            <section class="intro column">
+              <p>
+                A passionated developer, my dedication and experience will help your team to achieve exactly what you are looking for. Among my wide offer, you will be able to find the perfect solution for your particular case, always with personalised treatment, active customer support and affordable fees.<br>
+                Scroll down to get to know me better and find my working history and associated customers.
+              </p>
+            </section>
+          </section><!-- end of col 2-->
+          <section class="col-sm">
+            <section class="skill column">
+              <ul id="skill-list">
+                <li>
+                  <i class="fab fa-dev"></i>&nbsp;&nbsp;Web Applications;
+                </li>
+                <li>
+                  <i class="fas fa-pen-nib"></i>&nbsp;&nbsp;Web & Graphic design;
+                </li>
+                <li>
+                  <i class="fab fa-android"></i>&nbsp;&nbsp;Android solutions;
+                </li>
+              </ul>
+            </section>
+          </section><!-- end of col 3-->
+        </section><!--end of row-->
+        <section class="row">
+          <section class="col-sm">
+            <section class="main-text">
+              <h3>Get to know me better</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lobortis enim neque. Proin venenatis porttitor purus, non volutpat quam aliquet quis. In varius purus ut nisl hendrerit feugiat. Donec mattis nibh accumsan magna ultrices vestibulum. Etiam at massa velit. Praesent at ultricies enim, eget congue ex. Praesent vitae erat non ligula rhoncus iaculis. Mauris quis quam nec tortor hendrerit viverra vel eu eros. Duis ullamcorper dui eu sem aliquet interdum. Aliquam venenatis, sapien at euismod tincidunt, nunc augue imperdiet libero, at tempus libero velit id ipsum. Nunc vitae nisi quis tortor vestibulum vulputate cursus et tortor. Cras in odio quis est ornare vulputate. Nulla a rhoncus sem, eget aliquam libero. Fusce et arcu sem. Cras vestibulum dapibus risus, ut rutrum arcu tempor sit amet.
+              </p>
+            </section>
+          </section><!-- end of col -->
+        </section><!-- end of row-->
+      </section><!-- end of container for columns -->
+    </section><!-- end of main content -->
+    <!-- jquery call -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- end of jquery call -->
+    <!-- boostrap call -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- end of bootsrap call -->
   </body>
   <footer>
     <a href="https://github.com/Alphabetus" target="_blank">GitHub</a> | <a href="mailto:dlgreis88@gmail.com">Diogo Gomes</a> <b>&copy;</b>2018
