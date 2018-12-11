@@ -10,6 +10,9 @@
   --nav-color-1: #385F71;
   --nav-color-2: #1A9B65;
   --color-grey-01: #EFEFEF;
+  --non-opaque-blue-2-light: rgba(84, 180, 196, 0.09);
+  --non-opaque-blue-2: rgba(84, 180, 196, 0.2);
+  --non-opaque-blue-2-dark: rgba(84, 180, 196, 0.4);
   /* image vars  */
   --img-pattern-01: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAJklEQVQYV2PsfvyxoVSWv4EBCTCC2OgSYEFkCZACuCCyBIZKkCQApRkW5X2k5dcAAAAASUVORK5CYII=");
   --img-background-01: url("../img/background_01.jpg");
@@ -93,7 +96,6 @@ body{
 }
 /* ABOUT PAGE  */
 .skill, .intro, .image{
-  background-color: var(--color-blue-1);
   color: var(--text-header);
   background-image: var(--img-background-01);
   background-repeat: no-repeat;
@@ -146,6 +148,7 @@ nav {
   top: 0;
   left: 0;
   background-color: var(--color-blue-1);
+  /* z-index attributted on a topper level  */
   z-index: 100;
   font-size: 16px;
   text-transform: uppercase;
@@ -255,4 +258,27 @@ p,li{
 .contactCol ul{
   font-weight: 900;
   font-style: italic;
+}
+/* carousell styling  */
+.imgSlide{
+  display: block;
+  margin: auto;
+  height: 100vh;
+  width: 90vw;
+}
+.carousel-caption{
+  position: absolute;
+  bottom: 0;
+  margin: auto;
+  background-color: var(--non-opaque-blue-2-dark);
+  color: var(--text-header);
+  font-weight: bold;
+  font-size: 0.95em;
+  padding: 2vh 2vh 5vh 2vh;
+}
+.carousel-control-prev, .carousel-control-next{
+  background-color: var(--non-opaque-blue-2);
+}
+.carousel-control-prev:hover, .carousel-control-next:hover{
+  background-color: var(--non-opaque-blue-2-dark);
 }
