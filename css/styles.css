@@ -23,8 +23,31 @@ body{
   color: #34495e;
   padding-bottom: 50px;
 }
+#bodyContact h1{
+  text-align: left;
+}
 #bodyContact{
-  background-color: var(--non-opaque-blue-2);
+  font-size: 1.2vw;
+  border-radius: 5px;
+  background-image: var(--img-background-01);
+  padding: 4vh;
+  text-align: center;
+}
+#bodyContact .img-fluid{
+  height:45vh;
+}
+#bodyContact ul{
+  position: relative;
+  top: 35%;
+  list-style-type: none;
+  font-size: 2vw;
+}
+#contactContent{
+  margin-top: 5vh;
+}
+.contactSquare{
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 5vh 4vw;
 }
 /* CONTAINER ADJUSTS  */
 .container{
@@ -60,6 +83,30 @@ body{
 }
 .jumbotron p{
   color: var(--text-header-2);
+}
+#work{
+  height: 100vh;
+  text-align: center;
+}
+#work .img-fluid{
+  transition: all 1.5s ease-in-out;
+  border-radius: 50%;
+}
+#work .img-fluid:hover{
+  border-radius: 6%!important;
+  box-shadow: 1vh 1vh var(--non-opaque-blue-2);
+}
+.portsquare{
+  transition: all 1.5s ease-in-out;
+  padding: 2vw;
+}
+.portsquare:hover{
+  transform: scale(1.25);
+  z-index: 50;
+}
+.header-port{
+  margin-top: 10vh;
+  margin-bottom: 5vh;
 }
 .btn{
   background-color: var(--color-blue-2);
@@ -235,6 +282,7 @@ footer a:hover{
 }
 /* TYPOGRAPHY STYLING  */
 p{
+  color: var(--text-header);
   text-align: justify;
 }
 h1,h2,h3{
@@ -281,4 +329,9 @@ p,li{
 }
 .carousel-control-prev:hover, .carousel-control-next:hover{
   background-color: var(--non-opaque-blue-2-dark);
+}
+/* SPECIFIC ICON HANDLING */
+.fatIcon{
+  font-size: 10vw;
+  color: var(--nav-color-1);
 }

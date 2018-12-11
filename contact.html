@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="eng">
+  <!-- header -->
   <head>
+    <!-- charset def -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- make responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- title -->
-    <title>Contact me</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="css/styles.css">
     <!-- bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- custom stylesheet -->
-    <!-- <link rel="stylesheet" href="css/styles.css"> -->
-    <link rel="stylesheet" href="css/styles.css">
     <!-- font awesome source > below bootsrap -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <!-- title  -->
+    <title>Contact me</title>
   </head>
+  <!-- body -->
   <body>
     <!-- navigation -->
     <nav class="container-fluid">
@@ -30,34 +32,41 @@
       </section>
     </nav>
     <!-- /navigation -->
-    <!-- main container -->
-    <div class="container content">
-      <div class="contactImg contactCol">
-        <div class="image">
-          <img class="contactImg" src="img/contact.jpg" alt="Contact Image"/>
-        </div>
-      </div><!-- end of col 1 -->
-      <div id="formArea" class="contactCol">
-        <h1>Contact me</h1>
-        <p>
-          Communication is the most important asset when working with web development. Contact me to clarify any questions and let me know exactly what you are looking for. I will guide you through the process and delivery an adequated response to your enquiry.
-        </p>
-        <ul class="contactUL">
-          <li>
-            <i class="fas fa-mobile-alt"></i>
-            &nbsp;+49 1766 8791590
-          </li>
-          <li>
-            <i class="fas fa-at"></i>
-            <a href="mailto:contact@followarmy.com">contact@followarmy.com</a>
-          </li>
-          <li>
-            <i class="fas fa-globe"></i>
-            <a href="https://followarmy.com/" target="_blank">https://followarmy.com/</a>
-          </li>
-        </ul>
-      </div><!-- end of col 2 -->
-    </div><!-- end main container-->
+    <section id="bodyContact" class="container content">
+      <section class="row">
+        <section class="icon col-2">
+          <i class="far fa-question-circle fatIcon"></i>
+        </section><!-- icon end -->
+        <section class="header col-10">
+          <h1>Contact me</h1>
+          <p>
+            Communication is the most important asset when working with web development. Contact me to clarify any questions and let me know exactly what you are looking for. I will guide you through the process and delivery an adequated response to your enquiry.
+          </p>
+        </section><!-- text end -->
+      </section><!-- header row -->
+      <section id="contactContent" class="row">
+        <section class="contactSquare col-6 col-xs-12">
+          <img src="img/contact.jpg" alt="Contact background" class="img-fluid rounded-circle"/>
+        </section><!-- col #1 -->
+        <section class="contactSquare col-6 col-xs-12">
+          <ul>
+            <li>
+              <i class="fas fa-mobile-alt"></i>
+              &nbsp;+49 1766 8791590
+            </li>
+            <li>
+              <i class="fas fa-at"></i>
+              <a href="mailto:contact@followarmy.com">contact@followarmy.com</a>
+            </li>
+            <li>
+              <i class="fas fa-globe"></i>
+              <a href="https://followarmy.com/" target="_blank">https://followarmy.com/</a>
+            </li>
+          </ul>
+        </section><!-- col #2 -->
+      </section><!-- 2 grid row & XS responsive to 1 grid
+    </section><!-- main container -->
+    <!-- script calls -->
     <!-- jquery call -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- end of jquery call -->
@@ -66,7 +75,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     <!-- end of bootsrap call -->
+  <!-- end body -->
   </body>
+  <!-- footer -->
   <footer>
     <a href="https://github.com/Alphabetus" target="_blank">GitHub</a> | <a href="mailto:dlgreis88@gmail.com">Diogo Gomes</a> <b>&copy;</b>2018
   </footer>
