@@ -8,7 +8,7 @@
   --color-blue-2: #72E3F5;
   --shadow-color-1: rgba(0, 0, 0, 0.05);
   --nav-color-1: #385F71;
-  --nav-color-2: #2AF9A3;
+  --nav-color-2: #1A9B65;
   --color-grey-01: #EFEFEF;
   /* image vars  */
   --img-pattern-01: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAJklEQVQYV2PsfvyxoVSWv4EBCTCC2OgSYEFkCZACuCCyBIZKkCQApRkW5X2k5dcAAAAASUVORK5CYII=");
@@ -219,7 +219,7 @@ footer a:hover{
   cursor: pointer;
 }
 .card-header .collapsed:hover{
-  color: var(--color-blue-1)!important;
+  color: var(--nav-color-2)!important;
   font-size: 1.05em;
   /* effects */
   transition: color 800ms, font-size 1200ms;
