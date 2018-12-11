@@ -9,12 +9,16 @@
   --color-blue-2: #72E3F5;
   --shadow-color-1: rgba(0, 0, 0, 0.05);
   --non-opaque-blue-2: rgba(84, 180, 196, 0.2);
+  --nav-color-1: #33658A;
+  --nav-color-2: #22445E;
+  /* image vars  */
+  --img-pattern-01: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAJklEQVQYV2PsfvyxoVSWv4EBCTCC2OgSYEFkCZACuCCyBIZKkCQApRkW5X2k5dcAAAAASUVORK5CYII=");
+  --img-background-01: url("../img/background_01.jpg");
 }
 * { box-sizing: border-box;}
 .container{
   margin: 0 auto;
   width: 80%;
-  height: 100%;
 }
 body{
   background-color: #fff;
@@ -25,12 +29,6 @@ body{
 }
 p{
   text-align: justify;
-}
-#main{
-  margin-top: 10vh;
-}
-.header h1{
-  text-align: center;
 }
 .column{
  display: inline-block;
@@ -81,7 +79,47 @@ p{
 }
 .skill, .intro, .image{
   background-color: var(--color-blue-1);
-  color: #fff;
+  color: var(--text-header);
+  background-image: var(--img-background-01);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content{
+  margin-top: 15vh;
+}
+/* navigation styles  */
+nav {
+  position: fixed;
+  width: 100% !important;
+  height: 7vh;
+  top: 0;
+  left: 0;
+  background-color: var(--color-blue-1);
+  z-index: 100;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 2vh 3vw 1vh 3vw;
+  clear: both;
+  background-image: var(--img-background-01);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+nav .spaced{
+  word-spacing: 2vw;
+}
+nav a {
+  font-weight: 900;
+  text-decoration: none;
+  color: var(--nav-color-1);
+}
+nav a:hover{
+  font-size: 1.06em;
+  color: var(--nav-color-2);
+  text-decoration: underline;
+  /* safari */
+  -webkit-transition: font-size 1200ms, color 300ms;
+  /* regular */
+  transition: font-size 1200ms, color 300ms;
 }
 /* typography */
 h1,h2,h3{
@@ -108,4 +146,25 @@ p,li{
 .contactCol ul{
   font-weight: 900;
   font-style: italic;
+}
+/* FLOAT HANDLERS  */
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+/* temporary fixes  */
+footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-image: var(--img-background-01);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: var(--text-header);
+  font-size: 12px;
+  text-align: right;
+  padding: 0px 25px 0px 25px;
 }
