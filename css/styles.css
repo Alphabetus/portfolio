@@ -13,6 +13,7 @@
   --non-opaque-blue-2-light: rgba(84, 180, 196, 0.09);
   --non-opaque-blue-2: rgba(84, 180, 196, 0.2);
   --non-opaque-blue-2-dark: rgba(84, 180, 196, 0.4);
+  --non-opaque-blue-2-darker: rgba(84, 180, 196, 0.95);
   /* image vars  */
   --img-pattern-01: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAJklEQVQYV2PsfvyxoVSWv4EBCTCC2OgSYEFkCZACuCCyBIZKkCQApRkW5X2k5dcAAAAASUVORK5CYII=");
   --img-background-01: url("../img/background_01.jpg");
@@ -64,6 +65,8 @@ nav {
   color: var(--text-header)!important;
   font-weight: 900!important;
   font-family: 'Impact', Arial, sans-serif!important;
+  margin-left: auto;
+  margin-right: 0;
 }
 nav .active{
   font-size: 1.06em;
@@ -87,11 +90,47 @@ nav a:hover{
   -webkit-transition: font-size 1200ms, color 300ms;
   transition: font-size 1200ms, color 300ms;
 }
-nav .nav{
-  position: absolute;
-  top: 50%;
-  right: 2vw;
-  transform: translateY(-50%);
+
+nav .collapsing {
+  border-style: solid;
+  margin-left: auto;
+  border-width: 0;
+  margin-right: 0;
+  height: 0;
+  min-width: 35vw;
+  max-width: 60vw;
+  background-color: var(--non-opaque-blue-2);
+  background-image: var(--img-background-01);
+  background-size: cover;
+  /* shadow */
+  box-shadow: 2vh 2vw rgba(0,0,0,0.15);
+  /* effects  */
+  transition: all 0.4s ease-in-out;
+  border-radius: 10% 0 10% 10%;
+  padding-left: 2vw;
+}
+nav .collapse{
+  border-width: 0;
+  border-style: solid;
+  border-color: var(--color-blue-1);
+
+}
+nav .show{
+  border-style: solid;
+  border-width: 0.0vw;
+  background-color: var(--non-opaque-blue-2-darker);
+  background-image: var(--img-background-01);
+  background-size: cover;
+  padding-left: 5vw;
+  margin-left: auto;
+  margin-right: 0;
+  min-width: 35vw;
+  max-width: 60vw;
+  border-radius: 8% 0 8% 8%;
+  /* shadow */
+  box-shadow: 2vh 2vw rgba(0,0,0,0.15);
+  /* effects */
+  transition: all 0.4s ease-in-out;
 }
 /* ##################### PORTFOLIO AREA / PAGE ##################### */
 .portsquare{
@@ -317,6 +356,10 @@ footer a:hover{
   background-color: var(--color-blue-1);
 }
 /* ##################### GENERAL ATTRIBUTES SPECIFICATIONS ##################### */
+/* HANDLER FOR CONTACT HEADER FLUID > NORMAL  */
+#contact h2{
+  margin-left: 10%;
+}
 /* SPECIFIC ICON HANDLING */
 .fatIcon{
   font-size: 10vw;
@@ -337,6 +380,9 @@ footer a:hover{
   border-width: 0.5px;
   border-color: lightblue;
   border-radius: 2px;
+}
+.mainBody{
+  padding-top: 10vh;
 }
 /* ##################### FLOAT HANDLERS ##################### */
 .left{
