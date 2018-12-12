@@ -103,7 +103,7 @@ nav .collapsing {
   background-image: var(--img-background-01);
   background-size: cover;
   /* shadow */
-  box-shadow: 2vh 2vw rgba(0,0,0,0.15);
+  box-shadow: 0.5vh 0.5vw rgba(0,0,0,0.15);
   /* effects  */
   transition: all 0.4s ease-in-out;
   border-radius: 10% 0 10% 10%;
@@ -128,7 +128,7 @@ nav .show{
   max-width: 60vw;
   border-radius: 8% 0 8% 8%;
   /* shadow */
-  box-shadow: 2vh 2vw rgba(0,0,0,0.15);
+  box-shadow: 0.5vh 0.5vw rgba(0,0,0,0.15);
   /* effects */
   transition: all 0.4s ease-in-out;
 }
