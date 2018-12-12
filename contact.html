@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html lang="eng">
   <!-- header -->
   <head>
@@ -15,8 +15,9 @@
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <!-- title  -->
-    <title>Contact me</title>
+    <title>Contacts</title>
   </head>
+  <!-- /header -->
   <!-- body -->
   <body>
     <!-- navigation -->
@@ -32,23 +33,34 @@
       </section>
     </nav>
     <!-- /navigation -->
-    <section id="bodyContact" class="container content">
-      <section class="row">
+    <!-- header container -->
+    <section id="contact" class="container content border01">
+      <!-- row #1 -->
+      <section class="row contactContent">
         <section class="icon col-2">
           <i class="far fa-question-circle fatIcon"></i>
-        </section><!-- icon end -->
+        </section><!-- /icon >> font awesome -->
         <section class="header col-10">
           <h1>Contact me</h1>
           <p>
             Communication is the most important asset when working with web development. Contact me to clarify any questions and let me know exactly what you are looking for. I will guide you through the process and delivery an adequated response to your enquiry.
           </p>
-        </section><!-- text end -->
-      </section><!-- header row -->
-      <section id="contactContent" class="row">
-        <section class="contactSquare col-6 col-xs-12">
-          <img src="img/contact.jpg" alt="Contact background" class="img-fluid rounded-circle"/>
-        </section><!-- col #1 -->
-        <section class="contactSquare col-6 col-xs-12">
+        </section><!-- header description -->
+      </section>
+      <!-- /row #1 >> content has css percentual values and will scale according to device screen size. -->
+    </section>
+    <!-- /header container -->
+    <!-- content grid container -->
+    <section id="contactContentContainer" class="container">
+      <!-- row #1 -->
+      <section id="contactRow" class="row justify-content-center">
+        <!-- col #1 >> 6/12 on desktop && 12/12 on mobiles && Centers content -->
+        <section id="contact-leftSquare" class="col-md-4 col-sm-10 marginal border01">
+          <img id="contactIMG" src="img/contact.jpg" alt="Contact background" class="rounded-circle img-fluid"/>
+        </section>
+        <!-- /col #1 -->
+        <!-- col #2 >> 6/12 on desktop && 12/12 on mobiles && Justtifies content left -->
+        <section id="contact-rightSquare" class="col-md-4 col-sm-10 justify-content-start marginal border01">
           <ul>
             <li>
               <i class="fas fa-mobile-alt"></i>
@@ -63,22 +75,20 @@
               <a href="https://followarmy.com/" target="_blank">https://followarmy.com/</a>
             </li>
           </ul>
-        </section><!-- col #2 -->
-      </section><!-- 2 grid row & XS responsive to 1 grid
-    </section><!-- main container -->
-    <!-- script calls -->
+        </section>
+        <!-- /col #2 -->
+      </section>
+      <!-- /row #1 -->
+    </section>
+    <!-- /content grid container -->
+    <!-- call scripts -->
     <!-- jquery call -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- end of jquery call -->
     <!-- boostrap call -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    <!-- end of bootsrap call -->
-  <!-- end body -->
+    <!-- /call scripts -->
+  <!-- /body -->
   </body>
-  <!-- footer -->
-  <footer>
-    <a href="https://github.com/Alphabetus" target="_blank">GitHub</a> | <a href="mailto:dlgreis88@gmail.com">Diogo Gomes</a> <b>&copy;</b>2018
-  </footer>
 </html>

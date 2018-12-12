@@ -23,171 +23,7 @@ body{
   color: #34495e;
   padding-bottom: 50px;
 }
-#bodyContact h1{
-  text-align: left;
-}
-#bodyContact{
-  font-size: 1.2vw;
-  border-radius: 5px;
-  background-image: var(--img-background-01);
-  padding: 4vh;
-  text-align: center;
-}
-#bodyContact .img-fluid{
-  height:45vh;
-}
-#bodyContact ul{
-  position: relative;
-  top: 35%;
-  list-style-type: none;
-  font-size: 2vw;
-}
-#contactContent{
-  margin-top: 5vh;
-}
-.contactSquare{
-  background-color: rgba(255, 255, 255, 0.3);
-  padding: 5vh 4vw;
-}
-/* CONTAINER ADJUSTS  */
-.container{
-  margin: 0 auto;
-  width: 80%;
-}
-/* CONTENT ADJUSTS */
-.content{
-  margin-top: 15vh;
-}
-#header{
-  box-shadow: 0px 5px var(--shadow-color-1);
-}
-#contact{
-  text-align: center;
-}
-#contact .btn{
-  width: 50%;
-}
-.readMore{
-  position: absolute;
-  max-width: 50%;
-  margin: auto;
-  margin-bottom: 15px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-.jumbotron{
-  background-image: url("../img/background_01.jpg");
-  background-size: cover;
-  background-color: var(--background-color);
-}
-.jumbotron p{
-  color: var(--text-header-2);
-}
-#work{
-  height: 100vh;
-  text-align: center;
-}
-#work .img-fluid{
-  transition: all 1.5s ease-in-out;
-  border-radius: 50%;
-}
-#work .img-fluid:hover{
-  border-radius: 6%!important;
-  box-shadow: 1vh 1vh var(--non-opaque-blue-2);
-}
-.portsquare{
-  transition: all 1.5s ease-in-out;
-  padding: 2vw;
-}
-.portsquare:hover{
-  transform: scale(1.25);
-  z-index: 50;
-}
-.header-port{
-  margin-top: 10vh;
-  margin-bottom: 5vh;
-}
-.btn{
-  background-color: var(--color-blue-2);
-  border-style: none;
-}
-.btn:hover{
-  background-color: var(--color-blue-1);
-}
-.textHeader-color{
-  color: var(--text-header);
-}
-.centered{
-  text-align: center;
-}
-.max{
-  height: 100%;
-  border-style: solid;
-  border-color: red;
-}
-.column{
- display: inline-block;
- width: 100%;
- padding: 10% 8%;
- border-style: solid;
- border-width: 0.5px;
- border-color: lightblue;
- border-radius: 2px;
- height: 100%;
-}
-.contactCol{
-  display: inline-block;
-  float: left;
-  width: 50%;
-}
-/* ABOUT PAGE  */
-.skill, .intro, .image{
-  color: var(--text-header);
-  background-image: var(--img-background-01);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#skill-list{
-  font-size: 1.05em;
-  list-style-type: none;
-  font-weight: bold;
-}
-#skill-list li{
-  margin: 8vh 0;
-}
-#formArea{
-  text-align: justify;
-  padding: 2vh 2vw 2vh 2vw;
-  border-style: solid;
-  border-width: 1px;
-  border-color: var(--color-blue-1);
-  height: 100%;
-}
-#formArea p{
-  margin-top: 25px;
-}
-#formArea ul{
-  list-style-type: none;
-}
-/* CONTACT PAGE  */
-.contactImg{
-  position: relative;
-  width: 50%;
-}
-.main-text{
-  margin: 5vh auto auto auto;
-  background-image: var(--img-background-01);
-  padding: 60px 40px 60px 40px;
-  clear: both;
-}
-.image img{
-  position: relative;
-  top: 30%;
-  bottom: 0;
-  width: 100%;
-}
-/* NAVIGATION STYLING  */
+/* ##################### NAVIGATION MENU ##################### */
 nav {
   position: fixed;
   width: 100% !important;
@@ -222,90 +58,63 @@ nav a:hover{
   /* regular */
   transition: font-size 1200ms, color 300ms;
 }
-/* FLOAT HANDLERS  */
-.left{
-  float: left;
+/* ##################### PORTFOLIO AREA / PAGE ##################### */
+.portsquare{
+  transition: all 1.5s ease-in-out;
+  padding: 2vw;
 }
-.right{
-  float: right;
+.portsquare:hover{
+  transform: scale(1.25);
+  z-index: 50;
 }
-/* FOOTER  */
-footer{
-  position: fixed;
+.header-port{
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+}
+#work{
+  height: 100vh;
+  text-align: center;
+}
+#work .img-fluid{
+  transition: all 1.5s ease-in-out;
+  border-radius: 50%;
+}
+#work .img-fluid:hover{
+  border-radius: 6%!important;
+  box-shadow: 1vh 1vh var(--non-opaque-blue-2);
+}
+/* ##################### HOMEPAGE AREA / PAGE ##################### */
+#header{
+  box-shadow: 0px 5px var(--shadow-color-1);
+}
+#contact{
+  text-align: center;
+}
+#contact .btn{
+  width: 50%;
+}
+.centered{
+  text-align: center;
+}
+.textHeader-color{
+  color: var(--text-header);
+}
+.readMore{
+  position: absolute;
+  max-width: 50%;
+  margin: auto;
+  margin-bottom: 15px;
   bottom: 0;
   left: 0;
-  width: 100%;
+  right: 0;
+}
+.jumbotron{
   background-image: url("../img/background_01.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  color: var(--text-header);
-  font-size: 12px;
-  text-align: right;
-  padding: 0px 25px 0px 25px;
-}
-footer a{
-  font-weight: 900;
-  text-decoration: none;
-  color: var(--nav-color-1);
-}
-footer a:hover{
-  text-decoration: none;
-  font-weight: 900;
-}
-/* accordion styling  */
-.card-header{
-  background-image: var(--img-background-01);
   background-size: cover;
-  font-size: 22px;
+  background-color: var(--background-color);
 }
-.card-body{
-  background-color: var(--color-grey-01);
-  background-image: var(--img-pattern-01);
-  background-repeat: repeat;
-  font-size: 16px;
-}
-.card-header .collapsed{
-  color: var(--text-header);
-  cursor: pointer;
-}
-.card-header .collapsed:hover{
-  color: var(--nav-color-2)!important;
-  font-size: 1.05em;
-  /* effects */
-  transition: color 800ms, font-size 1200ms;
-  /* safari */
-  -webkit-transition: color 800ms, font-size 1200ms;
-}
-/* buttons styling  */
-.btn{
-  color: var(--text-header-1);
-}
-/* TYPOGRAPHY STYLING  */
-p{
-  color: var(--text-header);
-  text-align: justify;
-}
-h1,h2,h3{
-  font-family: Futura, Helvetica, Arial, sans-serif;
-}
-p,li{
-  font-family: 'Montserrat', sans-serif;
-}
-
-.intro p{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1em;
-  font-weight: 100;
-  -webkit-margin-before: 0;
-}
-.contactCol h1{
-  text-align: center;
-  font-weight: 100;
-  font-family: Papyrus,fantasy;
-}
-.contactCol ul{
-  font-weight: 900;
-  font-style: italic;
+.jumbotron p{
+  color: var(--text-header-2);
 }
 /* carousell styling  */
 .imgSlide{
@@ -330,8 +139,175 @@ p,li{
 .carousel-control-prev:hover, .carousel-control-next:hover{
   background-color: var(--non-opaque-blue-2-dark);
 }
+/* ##################### ABOUT AREA / PAGE ##################### */
+#skill-list{
+  font-size: 1.05em;
+  list-style-type: none;
+  font-weight: bold;
+}
+#skill-list li{
+  margin: 8vh 0;
+}
+.column{
+  padding: 10% 8%;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: lightblue;
+  border-radius: 2px;
+  height: 100%;
+}
+.skill, .intro, .image{
+  color: var(--text-header);
+  background-image: var(--img-background-01);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-text{
+  margin: 5vh auto auto auto;
+  background-image: var(--img-background-01);
+  padding: 60px 40px 60px 40px;
+  clear: both;
+}
+.image img{
+  position: relative;
+  top: 20%;
+}
+.aboutSquare{
+  margin-top: 5vh;
+}
+/* ##################### CONTACT AREA / PAGE ##################### */
+.titleDesc{
+  
+  top: 5vh;
+}
+.contactContent{
+  background-image: var(--img-background-01);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5vh;
+}
+#contactIMG{
+  height: 40vh;
+}
+#contact-leftSquare{
+  background-image: var(--img-background-01);
+  text-align: center;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+#contact-rightSquare{
+  background-image: var(--img-background-01);
+  background-size: cover;
+  font-weight: 900;
+  font-size: 1.3em;
+  padding-top: 12vh;
+}
+#contact-rightSquare ul{
+  list-style-type: none;
+}
+#contact .marginal{
+  margin: 4vh 2vw 0 2vw;
+}
+/* ##################### FAQ AREA / PAGE ##################### */
+.card-header{
+  background-image: var(--img-background-01);
+  background-size: cover;
+  font-size: 22px;
+}
+.card-body{
+  background-color: var(--color-grey-01);
+  background-image: var(--img-pattern-01);
+  background-repeat: repeat;
+  font-size: 16px;
+}
+.card-header .collapsed{
+  color: var(--text-header);
+  cursor: pointer;
+}
+.card-header .collapsed:hover{
+  color: var(--nav-color-2)!important;
+  font-size: 1.05em;
+  /* effects */
+  transition: color 800ms, font-size 1200ms;
+  /* safari */
+  -webkit-transition: color 800ms, font-size 1200ms;
+}
+/* ##################### FOOTER AREA ##################### */
+footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-image: url("../img/background_01.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: var(--text-header);
+  font-size: 12px;
+  text-align: right;
+  padding: 0px 25px 0px 25px;
+}
+footer a{
+  font-weight: 900;
+  text-decoration: none;
+  color: var(--nav-color-1);
+}
+footer a:hover{
+  text-decoration: none;
+  font-weight: 900;
+}
+/* ##################### GENERAL BUTTON SPECIFICATIONS ##################### */
+.btn{
+  background-color: var(--color-blue-2);
+  color: var(--text-header-1);
+  border-style: none;
+}
+.btn:hover{
+  background-color: var(--color-blue-1);
+}
+/* ##################### GENERAL ATTRIBUTES SPECIFICATIONS ##################### */
 /* SPECIFIC ICON HANDLING */
 .fatIcon{
   font-size: 10vw;
   color: var(--nav-color-1);
+}
+/* CONTAINER ADJUSTS  */
+.container{
+  margin: 0 auto;
+  width: 80%;
+}
+/* CONTENT ADJUSTS */
+.content{
+  margin-top: 8vh;
+}
+/* GENERAL BORDERS  */
+.border01{
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: lightblue;
+  border-radius: 2px;
+}
+/* ##################### TYPOGRAPHY HANDLERS ##################### */
+p{
+  color: var(--text-header);
+  text-align: justify;
+}
+h1,h2,h3{
+  font-family: Futura, Helvetica, Arial, sans-serif;
+}
+p,li{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.intro p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  font-weight: 100;
+  -webkit-margin-before: 0;
+}
+/* ##################### FLOAT HANDLERS ##################### */
+.left{
+  float: left;
+}
+.right{
+  float: right;
 }

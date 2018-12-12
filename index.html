@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="eng">
+  <!-- header -->
   <head>
+    <!-- charset def -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- make responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Diogo Gomes - Web Development</title>
     <!-- bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- custom stylesheet -->
+    <!-- link css below bootstrap -->
     <link rel="stylesheet" href="css/styles.css">
-    <!-- font awesome source > below bootstrap -->
+    <!-- font awesome source > below bootsrap -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <!-- title  -->
+    <title>Gome's Web</title>
   </head>
+  <!-- /header -->
   <!-- body -->
   <body>
     <!-- navigation -->
@@ -20,13 +26,15 @@
         <a href="/">Gomes' Web</a>
       </section>
       <section class="right spaced">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="faq.html">FAQ</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+        <a href="#faq">FAQ</a>
       </section>
     </nav>
     <!-- /navigation -->
+    <!-- home page area -->
     <!-- carousell start -->
     <section class="container-inner">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -86,10 +94,11 @@
       </div>
     </div> -->
     <!-- /jumbotron -->
-    <!-- about me -->
-    <div class="container textHeader-color content">
-      <div class="row">
-        <div class="col-sm">
+    <!-- intro & goals -->
+    <section id="about" class="container textHeader-color content">
+      <!-- row #1 -->
+      <section class="row justify-content-start">
+        <section class="col-sm">
           <h2><i class="fas fa-portrait"></i> About me</h2>
           <p>
             My name is Diogo, I am a full stack web developer based in Bremen, Germany. Welcome to my portfolio.<br>
@@ -97,13 +106,14 @@
             As a passionated developer, my dedication and experience will help your team to achieve exactly what you are looking for. Among my wide offer, you will be able to find the perfect solution for your particular case, always with personalised treatment, active customer support and affordable fees.<br>
             Scroll down to get to know me better and find my working history and associated customers.
           </p>
-        </div><!-- /col -->
-      </div><!-- /row -->
-    </div><hr><!-- /container-->
-    <!-- three column grid -->
-    <div class="container textHeader-color">
-      <div class="row">
-        <div class="col-sm">
+        </section>
+      </section>
+      <!-- /row #1 -->
+      <hr>
+      <!-- row #2 >> grid 4/12 and 12/12 small devices -->
+      <section class="row">
+        <!-- col #1 -->
+        <section class="col-md-4 col-sm-12">
           <h2 class="centered"><i class="fas fa-list"></i> Portfolio Concept</h2>
           <ul>
             <li>
@@ -115,8 +125,10 @@
           </ul>
           <br>
           <center><a class="btn btn-primary readMore" href="#portfolio" role="button">Read more &raquo;</a></center><br>
-        </div> <!-- /col -->
-        <div class="col-sm">
+        </section>
+        <!-- /col #1 -->
+        <!-- col #2 -->
+        <section class="col-md-4 col-sm-12">
           <h2 class="centered"><i class="fas fa-thumbtack"></i> Project Goals</h2>
           <ul>
             <li>
@@ -128,8 +140,10 @@
           </ul>
           <br>
           <center><a class="btn btn-primary readMore" href="#project" role="button">Read more &raquo;</a></center><br>
-        </div> <!-- /col -->
-        <div class="col-sm">
+        </section>
+        <!-- /col #2 -->
+        <!-- col #3 -->
+        <section class="col-md-4 col-sm-12">
           <h2 class="centered"><i class="fas fa-laptop-code"></i> Course Goals</h2>
           <ul>
             <li>
@@ -141,109 +155,100 @@
           </ul>
           <br>
           <center><a class="btn btn-primary readMore" href="#course" role="button">Read more &raquo;</a></center><br>
-        </div> <!-- /col -->
-      </div> <!-- /row -->
-    </div><hr><!-- /three col grid -->
-    <!-- Information area -->
-    <div class="container text-color">
-      <div id="portfolio" class="row">
-        <div class="col-sm">
-          <h2><i class="fas fa-list"></i> Portfolio Concept</h2>
-          <p>
-            My main goal is to be able to deliver top end interactive websites or webapps based on jscript and rails.<br>
-            Work with multiple customers with different needs and requests, from eCommerce to interactive web presence, including daily tools to improve performance or organization of said customer.<br>
-            Enlarge my service criteria applying already learned concepts of system management on Unix.<br>
-            Be presented with a problem and find a solution to overcome the situation with an optimized IT resource.
-          </p>
-        </div><!-- /col -->
-      </div> <!-- /row -->
-      <div id="project" class="row">
-        <div class="col-sm">
-          <h2><i class="fas fa-thumbtack"></i> Project Goals</h2>
-          <p>
-            I've been coding for pleasure/personal challenge for a long time. My goal here is to learn how to do it properly and professionaly.<br>
-            So far I didn't explored deeply my coding abilities as a professional wayout, except some casual clients here and there, and I want to change that.<br>
-            My dedication to the course will be similar to any full time job, focusing the biggest part of my daytime to it. Until completion, my plan is to invest around 8 hours per day on practicing, studying and applying the concepts learned here. Not only on my course material but on many other personal projects that I have already live and running.<br>
-          </p>
-        </div><!-- /col -->
-      </div> <!-- /row -->
-      <div id="course" class="row">
-        <div class="col-sm">
-          <h2><i class="fas fa-laptop-code"></i>Course Goals</h2>
-          <p>
-            Learn the best practices and otimization in order to keep a webapp stable and scalable, is the main reason that brought me here. Learn how to deal with frontend properly on a clean and optimized way. Ultimately get used to bootstrap is certainly a goal too. As for backend, rails will certainly be real fun. So far i've been using PHP on a daily basis on a still rudimentar way.
-          </p>
-        </div><!-- /col -->
-      </div> <!-- /row -->
-    </div>
-    <hr>
-    <!-- work container -->
-    <section class="container">
-      <section class="header-port">
-        <h1>Previous works</h1>
+        </section>
+        <!-- /col #3 -->
       </section>
+      <!-- /row #2 -->
+      <hr>
+    </section>
+    <!-- /intro & goals -->
+    <!-- portfolio -->
+    <section id="portfolio" class="container textHeader-color content">
+      <!-- row #0 header -->
+      <section class="row">
+        <h2><i class="fab fa-algolia"></i> My previous projects</h2>
+      </section>
+      <!-- /row #0 -->
+      <!-- row #1 grid system 3/12 > 4/12 > 6/12 > 12/12 -->
       <section id="work" class="row">
-        <section class="portsquare col-md-3 col-sm-6 col-xs-12">
-          <section class="portImg">
-            <img src="img/port_01.jpg" class="img-fluid rounded-circle" alt="Portfolio Example #1" height="100vh"/>
-          </section>
+        <!-- col #1 -->
+        <section class="portsquare col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <img src="img/port_01.jpg" class="img-fluid rounded-circle" alt="Portfolio Example #1" height="100vh"/>
         </section>
-        <section class="portsquare col-md-3 col-sm-6 col-xs-12">
-          <section class="portImg">
-            <img src="img/port_02.jpg" class="img-fluid rounded-circle" alt="Portfolio Example #2" height="100vh"/>
-          </section>
+        <!-- /col #1 -->
+        <!-- col #2 -->
+        <section class="portsquare col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <img src="img/port_02.jpg" class="img-fluid rounded-circle" alt="Portfolio Example #2" height="100vh"/>
         </section>
-        <section class="portsquare col-md-3 col-sm-6 col-xs-12">
-          <section class="portImg">
-            <img src="img/port_03.jpg" class="img-fluid rounded-circle" alt="Portfolio Example #3" height="100vh"/>
-          </section>
+        <!-- /col #2 -->
+        <!-- col #3 -->
+        <section class="portsquare col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <img src="img/port_03.jpg" class="img-fluid rounded-circle" alt="Portfolio Example #3" height="100vh"/>
         </section>
-        <section class="portsquare col-md-3 col-sm-6 col-xs-12">
-          <section class="portImg">
-            <img src="img/port_04.jpg" class="img-fluid rounded-circle" alt="Portfolio Example #4" height="100vh"/>
-          </section>
+        <!-- /col #3 -->
+        <!-- col #4 -->
+        <section class="portsquare col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <img src="img/port_04.jpg" class="img-fluid rounded-circle" alt="Portfolio Example #4" height="100vh"/>
         </section>
-        <section class="portsquare col-md-3 col-sm-6 col-xs-12">
-          <section class="portImg">
-            <img src="img/port_05.jpg" class="img-fluid rounded-circle" alt="Portfolio Example #5" height="100vh"/>
-          </section>
+        <!-- /col #4 -->
+        <!-- col #5 -->
+        <section class="portsquare col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <img src="img/port_05.jpg" class="img-fluid rounded-circle" alt="Portfolio Example #5" height="100vh"/>
         </section>
-        <section class="portsquare col-md-3 col-sm-6 col-xs-12">
-          <section class="portImg">
-            <img src="img/port_06.jpg" class="img-fluid rounded-circle" alt="Portfolio Example #6" height="100vh"/>
-          </section>
+        <!-- /col #5 -->
+        <!-- col #6 -->
+        <section class="portsquare col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <img src="img/port_06.jpg" class="img-fluid rounded-circle" alt="Portfolio Example #6" height="100vh"/>
         </section>
-        <section class="portsquare col-md-3 col-sm-6 col-xs-12">
-          <section class="portImg">
-            <img src="img/port_07.jpg" class="img-fluid rounded-circle" alt="Portfolio Example #7" height="100vh"/>
-          </section>
+        <!-- /col #6 -->
+        <!-- col #7 -->
+        <section class="portsquare col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <img src="img/port_07.jpg" class="img-fluid rounded-circle" alt="Portfolio Example #7" height="100vh"/>
         </section>
-        <section class="portsquare col-md-3 col-sm-6 col-xs-12">
-          <section class="portImg">
-            <img src="img/port_08.jpg" class="img-fluid rounded-circle" alt="Portfolio Example #8" height="100vh"/>
-          </section>
+        <!-- /col #7 -->
+        <!-- col #8 -->
+        <section class="portsquare col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <img src="img/port_08.jpg" class="img-fluid rounded-circle" alt="Portfolio Example #8" height="100vh"/>
         </section>
-      </section><!-- end of row work -->
-    </section><!-- end of work container -->
-    <hr><!-- / information area -->
-   <div class="container textHeader-color">
-     <div class="row">
-       <div id='contact' class="col-sm">
-         <a class="btn btn-primary" href="mailto:dlgreis88@gmail.com" role="button">Contact me</a>
-       </div><!-- /col -->
-     </div><!-- /row -->
-   </div><!-- /container -->
+        <!-- /col #8 -->
+      </section>
+      <!-- /row #1 -->
+    </section>
+    <hr>
+    <!-- /portfolio -->
+    <!-- contact area -->
+    <section id="contact" class="container textHeader-color content">
+      <!-- row #0 header -->
+      <section class="row">
+        <h2><i class="fab fa-algolia"></i> Easy approach and customer support</h2>
+      </section>
+      <!-- /row #0 -->
+      <!-- row #1 -->
+      <section class="row contactContent">
+        <section class="icon col-2">
+          <i class="far fa-question-circle fatIcon"></i>
+        </section><!-- /icon >> font awesome -->
+        <section class="col-10 justify-content-start titleDesc">
+          <p>
+            Communication is the most important asset when working with web development. Contact me to clarify any questions and let me know exactly what you are looking for. I will guide you through the process and delivery an adequated response to your enquiry.
+          </p>
+        </section><!-- header description -->
+      </section>
+      <!-- /row #1 >> content has css percentual values and will scale according to device screen size. -->
+
+    </section>
+    <!-- /contact area -->
+    <!-- /home page area -->
+    <!-- call scripts -->
     <!-- jquery call -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- end of jquery call -->
     <!-- boostrap call -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    <!-- end of bootsrap call -->
+    <!-- /call scripts -->
   </body>
-  <footer>
-    <a href="https://github.com/Alphabetus" target="_blank">GitHub</a> | <a href="mailto:dlgreis88@gmail.com">Diogo Gomes</a> <b>&copy;</b>2018
-  </footer>
   <!-- /body -->
+  <!-- footer -->
+  <!-- /footer-->
 </html>
